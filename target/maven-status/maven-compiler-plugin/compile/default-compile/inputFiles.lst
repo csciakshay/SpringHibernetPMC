@@ -1,8 +1,8 @@
-C:\Users\Y04055\Downloads\SpringMVC_Hibernate_Setup\src\main\java\com\javaspringclub\config\ServletInitializer.java
-C:\Users\Y04055\Downloads\SpringMVC_Hibernate_Setup\src\main\java\com\javaspringclub\config\WebMvcConfig.java
-C:\Users\Y04055\Downloads\SpringMVC_Hibernate_Setup\src\main\java\com\javaspringclub\controller\UserController.java
-C:\Users\Y04055\Downloads\SpringMVC_Hibernate_Setup\src\main\java\com\javaspringclub\service\UserServiceImpl.java
-C:\Users\Y04055\Downloads\SpringMVC_Hibernate_Setup\src\main\java\com\javaspringclub\repository\UserRepository.java
-C:\Users\Y04055\Downloads\SpringMVC_Hibernate_Setup\src\main\java\com\javaspringclub\entity\User.java
-C:\Users\Y04055\Downloads\SpringMVC_Hibernate_Setup\src\main\java\com\javaspringclub\config\HibernateConfig.java
-C:\Users\Y04055\Downloads\SpringMVC_Hibernate_Setup\src\main\java\com\javaspringclub\service\UserService.java
+C:\Users\Y04055\Downloads\SpringMVC_Hibernate_Setup\src\main\java\com\example\config\HibernateConfig.java
+C:\Users\Y04055\Downloads\SpringMVC_Hibernate_Setup\src\main\java\com\example\config\WebMvcConfig.java
+C:\Users\Y04055\Downloads\SpringMVC_Hibernate_Setup\src\main\java\com\example\config\ServletInitializer.java
+C:\Users\Y04055\Downloads\SpringMVC_Hibernate_Setup\src\main\java\com\example\entity\User.java
+C:\Users\Y04055\Downloads\SpringMVC_Hibernate_Setup\src\main\java\com\example\service\UserService.java
+C:\Users\Y04055\Downloads\SpringMVC_Hibernate_Setup\src\main\java\com\example\repository\UserRepository.java
+C:\Users\Y04055\Downloads\SpringMVC_Hibernate_Setup\src\main\java\com\example\service\UserServiceImpl.java
+C:\Users\Y04055\Downloads\SpringMVC_Hibernate_Setup\src\main\java\com\example\controller\UserController.java

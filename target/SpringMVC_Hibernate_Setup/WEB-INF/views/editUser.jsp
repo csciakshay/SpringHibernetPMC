@@ -8,6 +8,7 @@
 <title>Home</title>
 </head>
 <body>
+<div align="center">
 	<h1>${headerMessage}</h1>
 	
         <form:form method="POST" action="editUser" modelAttribute="user">
@@ -17,6 +18,7 @@
                 <tr>
                     <td><form:label path="firstName">First Name</form:label></td>
                     <td><form:input path="firstName"/></td>
+                    <td><springForm:errors path="firstName"/></td>
                 </tr>
                 <tr>
                     <td><form:label path="lastName">LastName</form:label></td>
@@ -27,10 +29,27 @@
                     <td><form:input path="userName"/></td>
                 </tr>
                 <tr>
+                    <td><form:label path="address">Address</form:label></td>
+                    <td><form:input path="address"/></td>
+                </tr>
+                <tr>
+                    <td><form:label path="city">City</form:label></td>
+                    <td><form:input path="city"/></td>
+                </tr>
+                <tr>
+                    <td><form:label path="email">Email</form:label></td>
+                    <td><form:input path="email"/></td>
+                </tr>
+                <tr>
+                    <td><form:label path="birthday">Birthday</form:label></td>
+                    <td><form:input path="birthday"/></td>
+                    <td><springForm:errors path="birthday" cssClass="error" /></td>
+                </tr>
+                <tr>
                     <td><input type="submit" value="Submit"/></td>
                 </tr>
             </table>
         </form:form>
-
+</div>
 </body>
 </html>

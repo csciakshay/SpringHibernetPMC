@@ -24,6 +24,10 @@
 				<th>First Name</th>
 				<th>Last Name</th>
 				<th>UserName</th>
+				<th>Address</th>
+				<th>City</th>
+				<th>Email</th>
+				<th>Birthday</th>
 				<th>Edit</th>
 				<th>Delete</th>
 			</tr>
@@ -35,6 +39,10 @@
 					<td>${user.firstName}</td>
 					<td>${user.lastName}</td>
 					<td>${user.userName}</td>
+					<td>${user.address}</td>
+					<td>${user.city}</td>
+					<td>${user.email}</td>
+					<td>${user.birthday}</td>
 					<td><a
 						href="${pageContext.request.contextPath}/editUser/${user.id}">Edit</a></td>
 					<td><a

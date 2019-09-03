@@ -12,10 +12,12 @@
 <br>
 <br>
 <br>
+<div align="center">
 	<form action="allUsers" method="post">
 
 		<input type="submit" value="List All Users" />
 
 	</form>
+</div>	
 </body>
 </html>

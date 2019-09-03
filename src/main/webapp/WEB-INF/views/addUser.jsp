@@ -6,6 +6,13 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Home</title>
+<style>
+.error {
+	color: #ff0000;
+	font-style: italic;
+	font-weight: bold;
+}
+</style>
 </head>
 <body>
 <div align="center">
@@ -16,14 +23,36 @@
                 <tr>
                     <td><form:label path="firstName">First Name</form:label></td>
                     <td><form:input path="firstName"/></td>
+                     <td><springForm:errors path="firstName" cssClass="error" /></td>
                 </tr>
                 <tr>
                     <td><form:label path="lastName">LastName</form:label></td>
                     <td><form:input path="lastName"/></td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td><form:label path="userName">UserName</form:label></td>
                     <td><form:input path="userName"/></td>
+                    <td><springForm:errors path="userName" cssClass="error" /></td>
+                </tr>
+                <tr>
+                    <td><form:label path="address">Address</form:label></td>
+                    <td><form:input path="address"/></td>
+                </tr>
+                <tr>
+                    <td><form:label path="city">City</form:label></td>
+                    <td><form:input path="city"/></td>
+                    <td></td>
+                </tr>
+                 <tr>
+                    <td><form:label path="email">Email</form:label></td>
+                    <td><form:input path="email"/></td>
+                    <td><springForm:errors path="email" cssClass="error" /></td>
+                </tr>
+                 <tr>
+                    <td><form:label path="birthday">Birthday</form:label></td>
+                    <td><form:input path="birthday" placeholder="MM/dd/yyyy"/></td>
+                    <td><springForm:errors path="birthday" cssClass="error" /></td>
                 </tr>
                 <tr>
                     <td><input type="submit" value="Submit"/></td>

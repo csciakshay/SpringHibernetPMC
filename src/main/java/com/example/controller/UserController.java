@@ -6,8 +6,13 @@ import java.util.List;
 import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.Validator;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +27,14 @@ public class UserController {
 	// Constructor based Dependency Injection
 	private UserService userService;
 
+	@Autowired
+	private Validator validator;
+
+	@InitBinder
+	private void initBinder(WebDataBinder binder) {
+		binder.setValidator(validator);
+	}
+	
 	public UserController() {
 
 	}
@@ -59,7 +72,7 @@ public class UserController {
 	}
 
 	@RequestMapping(value = "/addUser", method = RequestMethod.POST)
-	public ModelAndView saveNewUser(@ModelAttribute User user, BindingResult result) {
+	public ModelAndView saveNewUser(@ModelAttribute @Validated User user, BindingResult result) {
 		ModelAndView mv = new ModelAndView("redirect:/home");
 
 		if (result.hasErrors()) {
